@@ -31,7 +31,7 @@ locals {
 ################## Create Security Group for Public Instances  ################## 
 resource "aws_security_group" "instance_sg" {
   name        = "allow_public_access"
-  description = "Allow Traffic from Anywhere"
+  description = "Allow con cac tao from Anywhere"
   vpc_id      = local.vpc_id
 
   dynamic "ingress" {
